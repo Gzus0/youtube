@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="imagenes/favicon.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="yt-navbar navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <button class="yt-nav-icon btn p-0 me-2 d-lg-none">
+                    <span class="material-icons-round">menu</span>
+                </button>
+                <a class="navbar-brand p-0 me-3" href="#">
+                    <img src="https://www.gstatic.com/youtube/img/promos/growth/cd324b0cc433d3910e6b4ca1dda0f3afd6808b4e8c31752c0dd338486a004928_122x56.webp" alt="YouTube" class="yt-logo d-none d-lg-block">
+                    <img src="https://www.gstatic.com/youtube/img/promos/growth/cd324b0cc433d3910e6b4ca1dda0f3afd6808b4e8c31752c0dd338486a004928_122x56.webp" alt="YouTube" class="yt-mobile-logo d-lg-none">
+                </a>
+            </div>
+            
+            <div class="yt-nav-center d-none d-lg-flex flex-grow-1 mx-4" style="max-width: 640px;">
+                <div class="input-group">
+                    <input type="text" class="yt-search-input form-control rounded-start-pill" placeholder="Buscar">
+                    <button class="yt-search-btn btn rounded-end-pill">
+                        <span class="material-icons-round">search</span>
+                    </button>
+                </div>
+                <button class="yt-voice-search btn ms-2 p-0 d-flex align-items-center justify-content-center">
+                    <span class="material-icons-round">mic</span>
+                </button>
+            </div>
+            
+            <div class="yt-nav-right d-flex align-items-center">
+                <button class="yt-nav-icon btn p-0 mx-1 d-none d-md-flex">
+                    <span class="material-icons-round">video_call</span>
+                </button>
+                <button class="yt-nav-icon btn p-0 mx-1 d-none d-md-flex">
+                    <span class="material-icons-round">notifications</span>
+                </button>
+                <button class="yt-nav-icon btn p-0 mx-1 d-none d-md-flex">
+                    <span class="material-icons-round">apps</span>
+                </button>
+                <div class="yt-user-icon d-flex align-items-center justify-content-center ms-2">U</div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <aside class="yt-sidebar col-lg-2 d-none d-lg-block">
+                <div class="yt-sidebar-item active">
+                    <span class="material-icons-round yt-sidebar-icon">home</span>
+                    <span class="yt-sidebar-text">Inicio</span>
+                </div>
+                <div class="yt-sidebar-item">
+                    <span class="material-icons-round yt-sidebar-icon">explore</span>
+                    <span class="yt-sidebar-text">Explorar</span>
+                </div>
+                <div class="yt-sidebar-item">
+                    <span class="material-icons-round yt-sidebar-icon">subscriptions</span>
+                    <span class="yt-sidebar-text">Suscripciones</span>
+                </div>
+                
+                <div class="yt-sidebar-section">
+                    <div class="yt-sidebar-item">
+                        <span class="material-icons-round yt-sidebar-icon">video_library</span>
+                        <span class="yt-sidebar-text">Biblioteca</span>
+                    </div>
+                    <div class="yt-sidebar-item">
+                        <span class="material-icons-round yt-sidebar-icon">history</span>
+                        <span class="yt-sidebar-text">Historial</span>
+                    </div>
+                    <div class="yt-sidebar-item">
+                        <span class="material-icons-round yt-sidebar-icon">smart_display</span>
+                        <span class="yt-sidebar-text">Tus videos</span>
+                    </div>
+                    <div class="yt-sidebar-item">
+                        <span class="material-icons-round yt-sidebar-icon">watch_later</span>
+                        <span class="yt-sidebar-text">Ver más tarde</span>
+                    </div>
+                    <div class="yt-sidebar-item">
+                        <span class="material-icons-round yt-sidebar-icon">thumb_up</span>
+                        <span class="yt-sidebar-text">Videos que me gustan</span>
+                    </div>
+                </div>
+                
+                <div class="yt-sidebar-section">
+                    <div class="yt-sidebar-title">Suscripciones</div>
+                    <div class="yt-sidebar-channel">
+                        <div class="yt-channel-icon"><img src="imagenes/canal1.jpg" style="width: 100%; border-radius: 50%; background-color: var(--yt-text-secondary)"></div>
+                        <span class="yt-sidebar-text">Alter</span>
+                    </div>
+                    <div class="yt-sidebar-channel">
+                        <div class="yt-channel-icon"><img src="imagenes/canal2.jpg" style="width: 100%; border-radius: 50%; background-color: var(--yt-text-secondary)"></div>
+                        <span class="yt-sidebar-text">Colors</span>
+                    </div>
+                    <div class="yt-sidebar-channel">
+                        <div class="yt-channel-icon"><img src="imagenes/canal3.jpg" style="width: 100%; border-radius: 50%; background-color: var(--yt-text-secondary)"></div>
+                        <span class="yt-sidebar-text">La capital</span>
+                    </div>
+                    <div class="yt-sidebar-channel">
+                        <div class="yt-channel-icon"><img src="imagenes/canal4.jpg" style="width: 100%; border-radius: 50%; background-color: var(--yt-text-secondary)"></div>
+                        <span class="yt-sidebar-text">Daft punk</span>
+                    </div>
+                    <div class="yt-sidebar-channel">
+                        <div class="yt-channel-icon"><img src="imagenes/canal5.jpg" style="width: 100%; border-radius: 50%; background-color: var(--yt-text-secondary)"></div>
+                        <span class="yt-sidebar-text">Vandal</span>
+                    </div>
+                </div>
+            </aside>
+            
+            <!-- Main Content -->
+            <main class="yt-main-content col-lg-10 col-xl-10 ms-auto">
+                <!-- Categories -->
+                <div class="yt-categories mb-3">
+                    <button class="yt-category active">Todo</button>
+                    <button class="yt-category">Música</button>
+                    <button class="yt-category">Videojuegos</button>
+                    <button class="yt-category">Programación</button>
+                    <button class="yt-category">Películas</button>
+                    <button class="yt-category">Noticias</button>
+                    <button class="yt-category">En vivo</button>
+                    <button class="yt-category">Aprendizaje</button>
+                    <button class="yt-category">Mixes</button>
+                    <button class="yt-category">Animación</button>
+                    <button class="yt-category">Recientes</button>
+                    <button class="yt-category">Vistos</button>
+                </div>
+                
+                <!-- Videos -->
+                <div class="row g-4">
+                    <!-- Video 1 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">10:30</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Título del video 1 - Este es un título de video de ejemplo</h3>
+                                    <p class="yt-channel-name">Nombre del canal</p>
+                                    <p class="yt-video-stats">1.2M vistas • hace 2 semanas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 2 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/9bZkp7q19f0/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">5:45</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Título del video 2 con un título más largo para probar el diseño</h3>
+                                    <p class="yt-channel-name">Otro canal</p>
+                                    <p class="yt-video-stats">5.7M vistas • hace 1 mes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 3 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/J---aiyznGQ/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">15:22</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Tutorial de programación en JavaScript avanzado</h3>
+                                    <p class="yt-channel-name">Canal de programación</p>
+                                    <p class="yt-video-stats">345K vistas • hace 3 días</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 4 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/jNQXAC9IVRw/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">8:12</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Reseña del último smartphone del mercado</h3>
+                                    <p class="yt-channel-name">Tecnología Hoy</p>
+                                    <p class="yt-video-stats">2.1M vistas • hace 1 semana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 5 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/oHg5SJYRHA0/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">22:05</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Documental sobre la naturaleza salvaje</h3>
+                                    <p class="yt-channel-name">Documentales HD</p>
+                                    <p class="yt-video-stats">876K vistas • hace 2 meses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 6 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/6_b7RDuLwcI/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">12:40</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Cómo hacer pan casero fácil y rápido</h3>
+                                    <p class="yt-channel-name">Cocina conmigo</p>
+                                    <p class="yt-video-stats">3.4M vistas • hace 5 meses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 7 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/L_jWHffIx5E/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">4:20</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Los mejores momentos de deportes del año</h3>
+                                    <p class="yt-channel-name">Deportes TV</p>
+                                    <p class="yt-video-stats">7.8M vistas • hace 3 semanas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Video 8 -->
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                        <div class="yt-video-card">
+                            <div class="yt-thumbnail-container">
+                                <img src="https://i.ytimg.com/vi/2Z4m4lnjxkY/hqdefault.jpg" alt="Video thumbnail" class="yt-thumbnail">
+                                <span class="yt-duration">18:33</span>
+                            </div>
+                            <div class="yt-video-details">
+                                <div class="yt-channel-avatar"></div>
+                                <div class="yt-video-info">
+                                    <h3 class="yt-video-title">Análisis completo de la nueva película de superhéroes</h3>
+                                    <p class="yt-channel-name">Cinefilia</p>
+                                    <p class="yt-video-stats">1.5M vistas • hace 4 días</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Shorts -->
+                <div class="yt-shorts-section">
+                    <div class="yt-shorts-header">
+                        <span class="material-icons-round yt-shorts-icon">shortcut</span>
+                        <h2 class="yt-shorts-title">Shorts</h2>
+                    </div>
+                    <div class="yt-shorts-container">
+                        <!-- Short 1 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/1Q8fG0TtVAY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Este es un Short de YouTube</h3>
+                            <p class="yt-short-views">15M vistas</p>
+                        </div>
+                        
+                        <!-- Short 2 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/2Z4m4lnjxkY/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Otro Short interesante</h3>
+                            <p class="yt-short-views">8.2M vistas</p>
+                        </div>
+                        
+                        <!-- Short 3 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/J---aiyznGQ/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Tutorial rápido en 60 segundos</h3>
+                            <p class="yt-short-views">3.5M vistas</p>
+                        </div>
+                        
+                        <!-- Short 4 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/dQw4w9WgXcQ/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Momento gracioso que debes ver</h3>
+                            <p class="yt-short-views">22M vistas</p>
+                        </div>
+                        
+                        <!-- Short 5 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/9bZkp7q19f0/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Receta express para la cena</h3>
+                            <p class="yt-short-views">5.1M vistas</p>
+                        </div>
+                        
+                        <!-- Short 6 -->
+                        <div class="yt-short-card">
+                            <div class="yt-short-thumbnail">
+                                <img src="https://i.ytimg.com/vi/oHg5SJYRHA0/hq720_2.jpg?sqp=-oaymwEdCJUDENAFSFXyq4qpAw8IARUAAIhCcAHAAQbQAQE=&rs=AOn4CLBpX8Vh1wZI5F9K0C2QYJ2X9X1Jqg" alt="Short thumbnail" class="yt-thumbnail">
+                            </div>
+                            <h3 class="yt-short-title">Consejo fitness en menos de 1 minuto</h3>
+                            <p class="yt-short-views">7.3M vistas</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>(19) Oasis - Wonderwall</title>
+    <link rel="icon" href="vecteezy_youtube-logo-png-youtube-icon-transparent_18930572.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-yt">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-youtube text-danger fs-3"></i>
+                <span class="ms-1 fw-bold" style="color: aliceblue; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">YouTube</span>
+            </a>
+            
+            <div class="d-flex flex-grow-1 mx-4">
+                <input class="form-control search-bar" type="search" placeholder="Buscar">
+                <button class="btn search-btn" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+            </div>
+            
+            <div class="d-flex">
+                <button class="btn btn-outline-light me-2">
+                    <i class="bi bi-camera-video"></i>
+                </button>
+                <button class="btn btn-outline-light me-2">
+                    <i class="bi bi-grid-3x3-gap"></i>
+                </button>
+                <button class="btn btn-outline-light me-2">
+                    <i class="bi bi-bell"></i>
+                </button>
+                <div class="rounded-circle bg-secondary" style="width: 32px; height: 32px;"></div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Sidebar -->
+    <div class="sidebar d-none d-md-block">
+        <div class="sidebar-item active">
+            <i class="bi bi-house-door"></i>
+            <span>Inicio</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-compass"></i>
+            <span>Explorar</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-collection-play"></i>
+            <span>Suscripciones</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-play-btn"></i>
+            <span>Biblioteca</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-clock-history"></i>
+            <span>Historial</span>
+        </div>
+        
+        <div class="sidebar-divider"></div>
+        
+        <div class="sidebar-item">
+            <i class="bi bi-fire"></i>
+            <span>Tendencias</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-music-note-list"></i>
+            <span>Música</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-controller"></i>
+            <span>Videojuegos</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-newspaper"></i>
+            <span>Noticias</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-trophy"></i>
+            <span>Deportes</span>
+        </div>
+        
+        <div class="sidebar-divider"></div>
+        
+        <div class="sidebar-item">
+            <i class="bi bi-gear"></i>
+            <span>Configuración</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-flag"></i>
+            <span>Denuncias</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="bi bi-question-circle"></i>
+            <span>Ayuda</span>
+        </div>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="row">
+            <!-- Video Player and Info -->
+            <div class="col-lg-8 col-md-12">
+                <div class="video-container">
+                    <!-- Aquí iría el iframe del video de YouTube -->
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; justify-content: center; align-items: center; color: white; background-color: #000;">
+                        <div style="text-align: center;">
+                            <i class="bi bi-play-circle-fill" style="font-size: 3rem;"></i>
+                            <p>Reproductor de video</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="video-title">Oasis - Wonderwall</h1>
+                
+                <div class="video-stats d-flex justify-content-between">
+                    <span>125,456 vistas • 15 jun. 2023</span>
+                    <div>
+                        <button class="action-btn">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>12K</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="bi bi-hand-thumbs-down"></i>
+                            <span>No me gusta</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="bi bi-share"></i>
+                            <span>Compartir</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="bi bi-clipboard-plus"></i>
+                            <span>Guardar</span>
+                        </button>
+                        <button class="action-btn">
+                            <i class="bi bi-three-dots"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="channel-info">
+                    <img src="https://via.placeholder.com/48" alt="Channel" class="channel-avatar">
+                    <div class="flex-grow-1">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="channel-name mb-0">Código Creativo</h5>
+                                <span class="channel-subs">150K suscriptores</span>
+                            </div>
+                            <button class="subscribe-btn">Suscrito</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-description p-3 mt-3 rounded" style="background-color: var(--yt-dark-3);">
+                    <p>En este tutorial aprenderás a recrear la interfaz de YouTube en su versión dark mode utilizando Bootstrap 5 y Flexbox. Perfecto para practicar tus habilidades de frontend.</p>
+                    <a href="#" class="text-decoration-none" style="color: var(--yt-blue);">Mostrar más</a>
+                </div>
+                
+                <div class="comments-section">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h5 class="comments-title mb-0">1,234 comentarios</h5>
+                        <button class="action-btn">
+                            <i class="bi bi-filter-left"></i>
+                            <span>Ordenar por</span>
+                        </button>
+                    </div>
+                    
+                    <div class="comment-input">
+                        <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                        <input type="text" class="comment-input-field" placeholder="Añade un comentario...">
+                    </div>
+                    
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                        <div class="comment-content">
+                            <h6 class="comment-author">Usuario Ejemplo <span class="text-muted" style="font-size: 0.8rem; font-weight: normal;">hace 2 días</span></h6>
+                            <p class="comment-text">Excelente tutorial, justo lo que necesitaba para mi proyecto. Gracias por compartir!</p>
+                            <div class="comment-actions">
+                                <button class="comment-action">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                    <span>245</span>
+                                </button>
+                                <button class="comment-action">
+                                    <i class="bi bi-hand-thumbs-down"></i>
+                                </button>
+                                <button class="comment-action">
+                                    Responder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="comment">
+                        <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                        <div class="comment-content">
+                            <h6 class="comment-author">Otro Usuario <span class="text-muted" style="font-size: 0.8rem; font-weight: normal;">hace 1 semana</span></h6>
+                            <p class="comment-text">¿Podrías hacer un video mostrando cómo agregar funcionalidad con JavaScript?</p>
+                            <div class="comment-actions">
+                                <button class="comment-action">
+                                    <i class="bi bi-hand-thumbs-up"></i>
+                                    <span>98</span>
+                                </button>
+                                <button class="comment-action">
+                                    <i class="bi bi-hand-thumbs-down"></i>
+                                </button>
+                                <button class="comment-action">
+                                    Responder
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recommendations -->
+            <div class="col-lg-4 col-md-12">
+                <div class="recommendations">
+                    <div class="recommendation-card">
+                        <div class="recommendation-thumbnail"></div>
+                        <div class="recommendation-info">
+                            <h6 class="recommendation-title">Cómo hacer un navbar responsive con Bootstrap 5</h6>
+                            <p class="recommendation-channel">Web Design</p>
+                            <p class="recommendation-stats">45K vistas • hace 3 días</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-thumbnail"></div>
+                        <div class="recommendation-info">
+                            <h6 class="recommendation-title">Aprende Flexbox en 15 minutos - Tutorial completo</h6>
+                            <p class="recommendation-channel">CSS Masters</p>
+                            <p class="recommendation-stats">120K vistas • hace 2 semanas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-thumbnail"></div>
+                        <div class="recommendation-info">
+                            <h6 class="recommendation-title">Dark Mode en tus aplicaciones web - Implementación fácil</h6>
+                            <p class="recommendation-channel">Frontend Tips</p>
+                            <p class="recommendation-stats">32K vistas • hace 1 mes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-thumbnail"></div>
+                        <div class="recommendation-info">
+                            <h6 class="recommendation-title">Bootstrap 5 vs Tailwind CSS - Comparativa completa</h6>
+                            <p class="recommendation-channel">UI Battles</p>
+                            <p class="recommendation-stats">78K vistas • hace 3 semanas</p>
+                        </div>
+                    </div>
+                    
+                    <div class="recommendation-card">
+                        <div class="recommendation-thumbnail"></div>
+                        <div class="recommendation-info">
+                            <h6 class="recommendation-title">Cómo clonar interfaces populares para practicar frontend</h6>
+                            <p class="recommendation-channel">Dev Practice</p>
+                            <p class="recommendation-stats">56K vistas • hace 5 días</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
